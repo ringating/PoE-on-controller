@@ -11,12 +11,12 @@
     leftRadius := 100
     rightRadius := 200
     mouseOriginX := 960
-    mouseOriginY := 480
+    mouseOriginY := 490
     deadzoneRadiusL := 0.2
     deadzoneRadiusR := 0.15
     perspectiveScalar := 1.25 ; x/this=y or y*this=x
     buttonScalarDefault := 6 ;multiplier when pressing corresponding button
-    cursorSpeedSlow := 10
+    cursorSpeedSlow := 20
     cursorSpeedFast := 40
     
     ; variables
@@ -254,8 +254,8 @@ Update:
                 Click, up
                 moving := false
                 
-                MouseMove, mouseOriginX, mouseOriginY
-                Click ;this should stop the character in place
+                ; MouseMove, mouseOriginX, mouseOriginY
+                ; Click ;this should stop the character in place
             }
         }
     }
